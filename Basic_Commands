@@ -1,0 +1,25 @@
+// select all  the entries from the database
+
+select * from table_name;
+
+// select a particular column from the database
+
+select column_name from table_name;
+
+// select all the entries not repeating
+
+select DISTINCT column_name from table_name;
+
+//to specified a particular condition in  sql
+
+select * from customer where CustomerID > 50;
+
+//user can also use other type the < , > , == , = , != etc.
+
+
+// user can also used the commands AND,OR,NOT in Conditional Statement.
+
+select * from table_name where column_name='xyz' AND column_2 = 'abc'; //runs in case when both the conditions are true
+select * from table_name where column_name='xyx' OR columnn_2='abc'; // runs in any case when any one condition is true
+select * from table_name where NOT column_name='XYZ'; // USED IN not case
+select * from table_name where column_name='name' AND ( City='city_name_1' and City='city_name_2);// comma when condition is there
